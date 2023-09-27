@@ -4,16 +4,16 @@ export const Navbar = () => {
   const navLinkStyle = ({ isActive }) => {
     return {
       fontWeight: isActive ? 'bold' : 'normal',
-      textDecoration: isActive ? 'none' : 'underline',
+      textDecoration: isActive ? 'underline' : 'none',
     };
   };
   return (
     <nav>
       <NavLink style={navLinkStyle} to={'/'}>
-        Home
+        Accueil
       </NavLink>
       <NavLink style={navLinkStyle} to={'/about'}>
-        About
+        À propos
       </NavLink>
     </nav>
   );

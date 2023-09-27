@@ -13,10 +13,22 @@ code {
 }
 
 nav {
-  background-color: aliceblue;
+  text-align: right;
+  background-color: #FF6060;
   padding: 16px 32px;
 }
 
 nav a {
+  color: white;
   margin-right: 16px;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  color: white;
+  font-size: 25px;
 }

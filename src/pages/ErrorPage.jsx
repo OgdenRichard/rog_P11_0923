@@ -3,23 +3,24 @@ import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 
 export function ErrorPage() {
-  const error = useRouteError();
+  // const error = useRouteError();
   return (
     <>
-      <header>
+      {/* <header>
         <Navbar />
-      </header>
+      </header> */}
       <div id="error-page">
         <h1>Oops!</h1>
         <p>Sorry, an unexpected error has occurred.</p>
-        <p>{error.status}</p>
+        {/* <p>{error.status}</p> */}
         <p>
-          <i>{error.statusText || error.message}</i>
+          erreur
+          {/* <i>{error.statusText || error.message}</i> */}
         </p>
       </div>
-      <footer>
+      {/* <footer>
         <Footer />
-      </footer>
+      </footer> */}
     </>
   );
 }

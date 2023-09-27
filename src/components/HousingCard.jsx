@@ -4,7 +4,7 @@ export const HousingCard = ({ id, title }) => {
   return (
     <>
       <Link to={`housings/${id}`}>
-        <div>{title}</div>;
+        <div>{title}</div>
       </Link>
     </>
   );

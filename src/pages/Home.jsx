@@ -6,9 +6,15 @@ export const Home = () => {
   return (
     <>
       <main>
-        {housings.map((housing) => (
-          <HousingCard key={housing.id} id={housing.id} title={housing.title} />
-        ))}
+        <div className="housing_wrapper">
+          {housings.map((housing) => (
+            <HousingCard
+              key={housing.id}
+              id={housing.id}
+              title={housing.title}
+            />
+          ))}
+        </div>
       </main>
       <Outlet />
     </>

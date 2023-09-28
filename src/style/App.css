@@ -38,6 +38,13 @@ footer {
   color: white;
 }
 
+.housing_wrapper {
+  height: 50vh;
+  overflow-y: auto;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+}
+
 @media only screen and (width >= 768px) {
   header,
   footer {

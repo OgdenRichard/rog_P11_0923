@@ -5,11 +5,11 @@ import housings from '../data/logements.json';
 export const Home = () => {
   return (
     <>
-      <div>
+      <main>
         {housings.map((housing) => (
           <HousingCard key={housing.id} id={housing.id} title={housing.title} />
         ))}
-      </div>
+      </main>
       <Outlet />
     </>
   );

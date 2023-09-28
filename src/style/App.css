@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Shrikhand&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 header {
   display: flex;
   justify-content: space-between;
+  font-size: 24px;
+}
+
+header,
+main {
+  width: 80%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px 0;
 }
 
 nav {

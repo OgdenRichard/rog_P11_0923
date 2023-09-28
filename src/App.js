@@ -3,6 +3,7 @@ import {
   Route,
   createRoutesFromElements,
   RouterProvider,
+  Navigate,
 } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
@@ -14,7 +15,8 @@ import { HousingDetails } from './pages/HousingDetails';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
-      <Route path="/" element={<Home />} />
+      <Route index element={<Navigate to={'housing'} />} />
+      <Route path="housing" element={<Home />} />
       <Route path="housing/:id" element={<HousingDetails />} />
       <Route path="about" element={<About />} />
       <Route path="*" element={<ErrorPage />} />

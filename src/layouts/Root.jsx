@@ -7,9 +7,7 @@ export const Root = () => {
     <>
       <Header />
       <Outlet />
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </>
   );
 };

@@ -46,8 +46,12 @@ footer {
 }
 
 @media only screen and (width < 768px) {
-  .main_logo{
+  .main_logo {
     height: 47px;
+  }
+
+  nav a {
+    margin-left: 25px;
   }
 }
 
@@ -59,5 +63,27 @@ footer {
 
   header {
     text-transform: uppercase;
+  }
+
+  nav {
+    padding: 15px 0;
+  }
+
+  .main_logo {
+    height: 40px;
+  }
+}
+
+@media only screen and (width < 375px) {
+  nav {
+    padding: 8px;
+  }
+
+  nav a {
+    margin-left: 12px;
+  }
+
+  .main_logo {
+    height: 30px;
   }
 }

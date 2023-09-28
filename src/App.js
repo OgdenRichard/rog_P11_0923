@@ -13,9 +13,9 @@ import { HousingDetails } from './pages/HousingDetails';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Root />} /* errorElement={<ErrorPage />} */>
-      <Route path="/" element={<Home />}></Route>
-      <Route path="housing/:id" element={<HousingDetails />}></Route>
+    <Route path="/" element={<Root />}>
+      <Route path="/" element={<Home />} />
+      <Route path="housing/:id" element={<HousingDetails />} />
       <Route path="about" element={<About />} />
       <Route path="*" element={<ErrorPage />} />
     </Route>,

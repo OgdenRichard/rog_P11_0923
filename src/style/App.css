@@ -45,6 +45,18 @@ footer {
   border-radius: 25px;
 }
 
+.about_banner {
+  height: 223px;
+}
+
+.about_banner img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
 .error_page {
   text-align: center;
   color: #ff6060;
@@ -90,6 +102,11 @@ footer {
 
   .error_page a {
     font-size: 14px;
+  }
+
+  .about_banner img {
+    height: 111px;
+    border-radius: 10px;
   }
 
   nav a {

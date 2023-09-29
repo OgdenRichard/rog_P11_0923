@@ -80,6 +80,64 @@ footer {
   color: #ff6060;
 }
 
+.collapse {
+  position: relative;
+  margin-top: 20px;
+  background-color: none;
+}
+
+.collapse_button {
+  width: 100%;
+  height: 52px;
+  border-radius: 5px;
+  background-color: #ff6060;
+  text-align: left;
+  font-size: 18px;
+  color: white;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  border: none;
+}
+
+/* style à appliquer via state */
+.dropdown-option:hover > button > .arrow {
+  transform: rotate(-225deg);
+  margin-top: 4px;
+}
+
+.arrow {
+  position: absolute;
+  right: 20px;
+  width: 0.5em;
+  height: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+  border-left: 0.15em solid whitesmoke;
+  border-bottom: 0.15em solid whitesmoke;
+  transform: rotate(-45deg);
+  margin-left: 2em;
+  margin-right: 0.5em;
+  margin-top: -0.25em;
+  transition: transform 100ms ease-in-out;
+}
+
+.arrow::after,
+.arrow::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background: inherit;
+  width: inherit;
+  height: inherit;
+}
+
+.arrow::before {
+  top: 8px;
+}
+
+.arrow::after {
+  bottom: 8px;
+}
+
 @media only screen and (width >= 768px) {
   header,
   footer {

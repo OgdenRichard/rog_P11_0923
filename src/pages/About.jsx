@@ -1,4 +1,5 @@
 import about from '../assets/images/about.jpg';
+import { Collapse } from '../components/Collapse';
 
 export const About = () => {
   return (
@@ -8,6 +9,7 @@ export const About = () => {
           <div className="about_banner">
             <img src={about} alt="vallée dans les montagnes" />
           </div>
+          <Collapse title={'bonjour'} />
         </div>
       </main>
     </>

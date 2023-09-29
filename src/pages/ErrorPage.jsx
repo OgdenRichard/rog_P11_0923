@@ -1,11 +1,13 @@
+import { Link } from 'react-router-dom';
+
 export function ErrorPage() {
   return (
     <>
       <main>
-        <div id="error-page">
-          <h1>Oops!</h1>
-          <p>Sorry, an unexpected error has occurred.</p>
-          <p>erreur</p>
+        <div className="error_page">
+          <h1>404</h1>
+          <h2>Oops! La page que vous demandez n'existe pas</h2>
+          <Link>Retourner sur la page d'acceuil</Link>
         </div>
       </main>
     </>

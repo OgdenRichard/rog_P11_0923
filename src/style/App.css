@@ -12,7 +12,7 @@ header {
 header,
 main {
   width: 80%;
-  max-width: 1400px;
+  max-width: 1440px;
   margin: auto;
   padding: 20px 0;
 }
@@ -41,8 +41,31 @@ footer {
 .housing_wrapper {
   height: 50vh;
   overflow-y: auto;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-radius: 25px;
+}
+
+.error_page {
+  text-align: center;
+  color: #ff6060;
+}
+
+.error_page h1 {
+  margin: 0;
+  font-size: 288px;
+  font-weight: bolder;
+}
+
+.error_page h2 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.error_page a {
+  display: block;
+  margin-top: 75px;
+  font-size: 18px;
+  color: #ff6060;
 }
 
 @media only screen and (width >= 768px) {
@@ -55,6 +78,18 @@ footer {
 @media only screen and (width < 768px) {
   .main_logo {
     height: 47px;
+  }
+
+  .error_page h1 {
+    font-size: 96px;
+  }
+
+  .error_page h2 {
+    font-size: 18px;
+  }
+
+  .error_page a {
+    font-size: 14px;
   }
 
   nav a {

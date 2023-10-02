@@ -94,16 +94,17 @@ footer {
   margin-top: 20px;
   background-color: none;
   border-radius: 5px;
-  background-color: #ff6060;
+  background-color: #f6f6f6;
+  font-size: 18px;
 }
 
-.collapse_button {
+.collapse__button {
   width: 100%;
   height: 52px;
   border-radius: 5px;
   background-color: #ff6060;
   text-align: left;
-  font-size: 18px;
+  font-size: 1.3em;
   color: white;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   border: none;
@@ -128,56 +129,26 @@ footer {
   top: 100%;
   width: 100%;
   display: none;
-  background-color: #ff6060;
-  color: white;
+  background-color: #f6f6f6;
+  color: #ff6060;
 }
 
-.dropdown-content.show {
+.dropdown-content li {
+  margin-top: 5px;
+}
+
+.show {
   display: block;
   list-style-type: none;
-  margin-top: 0;
+  margin: 10px;
   padding-left: 5px;
   border-radius: 0 0 5px 5px;
 }
 
-/* style à appliquer via state */
-.dropdown-option:hover > button > .arrow {
-  transform: rotate(-225deg);
-  margin-top: 4px;
-}
-
-.arrow {
-  position: absolute;
-  right: 20px;
-  width: 0.5em;
-  height: 0.5em;
-  display: inline-block;
-  vertical-align: middle;
-  border-left: 0.15em solid whitesmoke;
-  border-bottom: 0.15em solid whitesmoke;
-  transform: rotate(-45deg);
-  margin-left: 2em;
-  margin-right: 0.5em;
-  margin-top: -0.25em;
-  transition: transform 100ms ease-in-out;
-}
-
-.arrow::after,
-.arrow::before {
-  content: '';
-  position: absolute;
-  display: block;
-  background: inherit;
-  width: inherit;
-  height: inherit;
-}
-
-.arrow::before {
-  top: 8px;
-}
-
-.arrow::after {
-  bottom: 8px;
+@media only screen and (width <= 1024px) {
+  .collapse__button {
+    font-size: 1em;
+  }
 }
 
 @media only screen and (width >= 768px) {
@@ -210,6 +181,10 @@ footer {
 
   .about_banner img {
     border-radius: 10px;
+  }
+
+  .collapse {
+    font-size: 13px;
   }
 
   nav a {

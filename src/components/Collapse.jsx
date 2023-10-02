@@ -10,7 +10,7 @@ export const Collapse = ({ title, options }) => {
   return (
     <>
       <div className="collapse">
-        <button className="collapse_button" onClick={toggleDropdown}>
+        <button className="collapse__button" onClick={toggleDropdown}>
           {title}
           <img
             src={arrow}

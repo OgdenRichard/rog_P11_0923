@@ -108,6 +108,11 @@ footer {
   position: absolute;
   right: 20px;
   top: 10px;
+  transition: transform 100ms ease-in-out;
+}
+
+.arrow_rotate{
+  transform: rotate(-180deg);
 }
 
 .dropdown-content {
@@ -121,6 +126,10 @@ footer {
 
 .dropdown-content.show {
   display: block;
+  list-style-type: none;
+  margin-top: 0;
+  padding-left: 5px;
+  border-radius: 0 0 5px 5px;
 }
 
 /* style à appliquer via state */

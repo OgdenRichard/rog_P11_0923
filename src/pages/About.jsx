@@ -2,6 +2,7 @@ import about from '../assets/images/about.jpg';
 import { Collapse } from '../components/Collapse';
 
 export const About = () => {
+  const options1 = ['lorem ipsum', 'salut', 'yeeepeee'];
   return (
     <>
       <main>
@@ -9,7 +10,7 @@ export const About = () => {
           <div className="about_banner">
             <img src={about} alt="vallée dans les montagnes" />
           </div>
-          <Collapse title={'bonjour'} />
+          <Collapse title={'bonjour'} options={options1} />
         </div>
       </main>
     </>

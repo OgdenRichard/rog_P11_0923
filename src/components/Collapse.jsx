@@ -12,9 +12,19 @@ export const Collapse = ({ title, options }) => {
       <div className="collapse">
         <button className="collapse_button" onClick={toggleDropdown}>
           {title}
-          <img src={arrow} alt="flèche" className="arrow_img"></img>
+          <img
+            src={arrow}
+            alt="flèche"
+            className={isOpen ? 'arrow_img' : 'arrow_img arrow_rotate'}
+          ></img>
         </button>
-        {isOpen && <div className="dropdown-content show">Content Here</div>}
+        {isOpen && (
+          <ul className="dropdown-content show">
+            {options.map((option, index) => (
+              <li key={index}>{option}</li>
+            ))}
+          </ul>
+        )}
       </div>
     </>
   );

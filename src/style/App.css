@@ -98,6 +98,12 @@ footer {
   border: none;
 }
 
+.arrow_img{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
 /* style à appliquer via state */
 .dropdown-option:hover > button > .arrow {
   transform: rotate(-225deg);

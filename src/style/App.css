@@ -38,12 +38,18 @@ footer {
   color: white;
 }
 
+/*--------------------------- HOME PAGE ---------------------------*/
+
 .housing_wrapper {
   height: 50vh;
   overflow-y: auto;
   background-color: #f6f6f6;
   border-radius: 25px;
 }
+
+/*---------------------- SINGLE HOUSING PAGE -----------------------*/
+
+/*--------------------------- ABOUT PAGE ---------------------------*/
 
 .about_banner {
   height: 223px;
@@ -62,6 +68,8 @@ footer {
   margin-top: 20px;
   overflow-y: auto;
 }
+
+/*--------------------------- ERROR PAGE ---------------------------*/
 
 .error_page {
   text-align: center;
@@ -85,6 +93,8 @@ footer {
   font-size: 18px;
   color: #ff6060;
 }
+
+/*--------------------------- COLLAPSE COMPONENT ---------------------------*/
 
 .collapse {
   position: relative;
@@ -145,6 +155,8 @@ footer {
   border-radius: 0 0 5px 5px;
 }
 
+/*--------------------------- MEDIA QUERIES---------------------------*/
+
 @media only screen and (width <= 1024px) {
   .collapse__button {
     font-size: 1em;
@@ -183,10 +195,6 @@ footer {
     border-radius: 10px;
   }
 
-  .collapse {
-    font-size: 13px;
-  }
-
   nav a {
     margin-left: 25px;
   }
@@ -208,6 +216,14 @@ footer {
 
   .main_logo {
     height: 40px;
+  }
+
+  .dropdown-content li {
+    font-size: 0.9em;
+  }
+
+  .collapse {
+    font-size: 13px;
   }
 }
 

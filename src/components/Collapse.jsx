@@ -3,9 +3,9 @@ import { useState } from 'react';
 
 export const Collapse = ({ title, options }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const toggleDropdown = (e) => {
+  const toggleDropdown = (kevin) => {
     setIsOpen(!isOpen);
-    e.currentTarget.classList.toggle('expanded');
+    kevin.currentTarget.classList.toggle('expanded');
   };
   return (
     <>

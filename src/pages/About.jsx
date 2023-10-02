@@ -2,9 +2,14 @@ import about from '../assets/images/about.jpg';
 import { Collapse } from '../components/Collapse';
 
 export const About = () => {
-  const options1 = ['lorem ipsum', 'salut', 'yeeepeee'];
-  const options2 = ['truc', 'truc'];
-  const options3 = ['bidule', 'machin', 'chose'];
+  const options1 = [
+    'lorem ipsum',
+    'dolor sit amet',
+    'consectetur adipiscing elit',
+  ];
+  const options2 = ['sed do eiusmod tempor'];
+  const options3 = ['incididunt ut labore', 'et dolore magna aliqua'];
+  const options4 = ['ut enim ad minim veniam', 'quis nostrud exercitation'];
   return (
     <>
       <main>
@@ -12,9 +17,12 @@ export const About = () => {
           <div className="about_banner">
             <img src={about} alt="vallée dans les montagnes" />
           </div>
-          <Collapse title={'bonjour'} options={options1} />
-          <Collapse title={'héhéhé'} options={options2} />
-          <Collapse title={'hahaha'} options={options3} />
+          <div className="about_wrapper">
+            <Collapse title={'Fiabilité'} options={options1} />
+            <Collapse title={'Respect'} options={options2} />
+            <Collapse title={'Service'} options={options3} />
+            <Collapse title={'Sécurité'} options={options4} />
+          </div>
         </div>
       </main>
     </>

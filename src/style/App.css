@@ -57,6 +57,12 @@ footer {
   border-radius: 25px;
 }
 
+.about_wrapper {
+  height: 35vh;
+  margin-top: 20px;
+  overflow-y: auto;
+}
+
 .error_page {
   text-align: center;
   color: #ff6060;
@@ -114,7 +120,7 @@ footer {
   transition: transform 100ms ease-in-out;
 }
 
-.arrow_rotate{
+.arrow_rotate {
   transform: rotate(-180deg);
 }
 
@@ -198,8 +204,11 @@ footer {
     font-size: 14px;
   }
 
-  .about_banner img {
+  .about_banner {
     height: 111px;
+  }
+
+  .about_banner img {
     border-radius: 10px;
   }
 

@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
 
-export const HousingCard = ({ id, title }) => {
+export const HousingCard = ({ id, title, cover }) => {
   return (
     <>
-      <Link to={`${id}`}>
-        <div>{title}</div>
-      </Link>
+      <figure className="housing__card">
+        <Link to={`${id}`}>
+          <img src={cover} alt="" />
+        </Link>
+      </figure>
     </>
   );
 };

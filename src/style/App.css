@@ -41,10 +41,30 @@ footer {
 /*--------------------------- HOME PAGE ---------------------------*/
 
 .housing_wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
   height: 50vh;
   overflow-y: auto;
   background-color: #f6f6f6;
   border-radius: 25px;
+}
+
+.housing__card {
+  width: 25%;
+  height: 250px;
+}
+
+.housing__card a {
+  display: inline-block;
+}
+
+.housing__card img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 /*---------------------- SINGLE HOUSING PAGE -----------------------*/

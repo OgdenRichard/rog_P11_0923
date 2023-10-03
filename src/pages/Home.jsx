@@ -12,6 +12,7 @@ export const Home = () => {
               key={housing.id}
               id={housing.id}
               title={housing.title}
+              cover={housing.cover}
             />
           ))}
         </div>

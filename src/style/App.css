@@ -41,20 +41,31 @@ footer {
 /*--------------------------- HOME PAGE ---------------------------*/
 
 .housing_wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-gap: 20px;
+  margin-top: 50px;
   width: 100%;
   height: 50vh;
+  padding: 20px;
   overflow-y: auto;
+  overflow-x: unset;
+  justify-content: center;
   background-color: #f6f6f6;
   border-radius: 25px;
 }
 
+/* .housing_wrapper img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+} */
+
 .housing__card {
-  width: 25%;
-  height: 250px;
+  aspect-ratio: 1;
+  /* width: 340px;
+  height: 340px; */
+  margin: 0;
 }
 
 .housing__card a {
@@ -62,9 +73,9 @@ footer {
 }
 
 .housing__card img {
-  object-fit: cover;
-  height: 100%;
   width: 100%;
+  height: auto;
+  object-fit: fill;
 }
 
 /*---------------------- SINGLE HOUSING PAGE -----------------------*/
@@ -177,6 +188,12 @@ footer {
 
 /*--------------------------- MEDIA QUERIES---------------------------*/
 
+@media only screen and (width < 1360px) {
+  .housing_wrapper {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
 @media only screen and (width <= 1024px) {
   .collapse__button {
     font-size: 1em;
@@ -191,6 +208,10 @@ footer {
 }
 
 @media only screen and (width < 768px) {
+  .housing_wrapper {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+
   .main_logo {
     height: 47px;
   }
@@ -219,6 +240,12 @@ footer {
     margin-left: 25px;
   }
 }
+
+/* @media only screen and (width <= 475px) {
+  .housing_wrapper {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+} */
 
 @media only screen and (width <= 425px) {
   header,

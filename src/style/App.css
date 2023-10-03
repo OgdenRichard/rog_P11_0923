@@ -55,27 +55,23 @@ footer {
   border-radius: 25px;
 }
 
-/* .housing_wrapper img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-} */
-
 .housing__card {
+  position: relative;
   aspect-ratio: 1;
-  /* width: 340px;
-  height: 340px; */
   margin: 0;
+  border-radius: 10px;
+}
+
+.housing__card figcaption{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 18px;
+  color: white;
 }
 
 .housing__card a {
-  display: inline-block;
-}
-
-.housing__card img {
-  width: 100%;
-  height: auto;
-  object-fit: fill;
+  display: block;
 }
 
 /*---------------------- SINGLE HOUSING PAGE -----------------------*/

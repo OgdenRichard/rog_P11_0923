@@ -100,6 +100,7 @@ footer {
 
 .error_page {
   text-align: center;
+  height: 600px;
   color: #ff6060;
 }
 
@@ -210,6 +211,10 @@ footer {
 }
 
 @media only screen and (width < 768px) {
+  .error_page {
+    height: 500px;
+  }
+
   .housing_wrapper {
     grid-template-columns: repeat(1, minmax(200px, 1fr));
     background-color: transparent;

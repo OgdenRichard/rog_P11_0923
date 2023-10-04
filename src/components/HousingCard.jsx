@@ -8,7 +8,10 @@ export const HousingCard = ({ id, title, cover }) => {
           className="housing__card"
           style={{
             gridArea: 'image',
-            backgroundImage: `url(${cover})`,
+            backgroundImage: `linear-gradient(
+              rgba(0, 0, 0, 0.15), 
+              rgba(0, 0, 0, 0.15)
+            ),url(${cover})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',

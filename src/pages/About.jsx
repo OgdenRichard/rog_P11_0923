@@ -1,4 +1,5 @@
 import about from '../assets/images/about.jpg';
+import { Banner } from '../components/Banner';
 import { Collapse } from '../components/Collapse';
 
 export const About = () => {
@@ -14,9 +15,7 @@ export const About = () => {
     <>
       <main>
         <div className="about_page">
-          <div className="about_banner">
-            <img src={about} alt="vallée dans les montagnes" />
-          </div>
+          <Banner title={''} image={about} />
           <div className="about_wrapper">
             <Collapse title={'Fiabilité'} options={options1} />
             <Collapse title={'Respect'} options={options2} />

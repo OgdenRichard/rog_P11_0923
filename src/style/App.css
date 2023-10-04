@@ -49,6 +49,7 @@ footer {
   line-height: 223px;
   font-size: 48px;
   color: white;
+  padding: 10px;
 }
 
 /*--------------------------- HOME PAGE ---------------------------*/
@@ -197,6 +198,13 @@ footer {
   }
 }
 
+@media only screen and (width < 940px) {
+  .banner h1 {
+    padding: 62px 15px;
+    line-height: 50px;
+  }
+}
+
 @media only screen and (width >= 768px) {
   header,
   footer {
@@ -207,6 +215,16 @@ footer {
 @media only screen and (width < 768px) {
   .housing_wrapper {
     grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+
+  .banner {
+    text-align: left;
+  }
+
+  .banner h1 {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 40px 80px 40px 20px;
   }
 
   .main_logo {
@@ -238,6 +256,12 @@ footer {
   }
 }
 
+@media only screen and (width <= 580px) {
+  .banner h1 {
+    padding-top: 25px;
+  }
+}
+
 @media only screen and (width <= 425px) {
   header,
   footer {
@@ -250,6 +274,10 @@ footer {
 
   nav {
     padding: 15px 0;
+  }
+
+  .banner h1 {
+    padding: 25px 50px 40px 20px;
   }
 
   .main_logo {
@@ -274,7 +302,17 @@ footer {
     margin-left: 12px;
   }
 
+  .banner h1 {
+    padding: 25px 20px 10px 20px;
+  }
+
   .main_logo {
     height: 30px;
+  }
+}
+
+@media only screen and (width <= 330px) {
+  .banner h1 {
+    padding-top: 10px;
   }
 }

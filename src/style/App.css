@@ -130,20 +130,26 @@ footer {
   border-radius: 25px;
 }
 
-.arrow_left {
-  position: absolute;
-  width: 96px;
-  top: 160px;
-  left: 20px;
-  transform: rotate(-90deg);
-}
-
+.arrow_left,
 .arrow_right {
   position: absolute;
   width: 96px;
   top: 160px;
-  right: 20px;
+}
+
+.arrow_left {
+  transform: rotate(-90deg);
+  left: 20px;
+}
+
+.arrow_right {
   transform: rotate(90deg);
+  right: 20px;
+}
+
+.arrow_left,
+.arrow_right:hover {
+  cursor: pointer;
 }
 
 /*--------------------------- COLLAPSE COMPONENT ---------------------------*/

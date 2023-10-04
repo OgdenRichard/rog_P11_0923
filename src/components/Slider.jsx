@@ -27,20 +27,20 @@ export const Slider = ({ slides }) => {
       }}
     >
       {isSlide && (
-        <img
-          src={arrow}
-          alt="précédente"
-          className="arrow_left"
-          onClick={changeSlide}
-        />
-      )}
-      {isSlide && (
-        <img
-          src={arrow}
-          alt="suivante"
-          className="arrow_right"
-          onClick={changeSlide}
-        />
+        <>
+          <img
+            src={arrow}
+            alt="précédente"
+            className="arrow_left"
+            onClick={changeSlide}
+          />
+          <img
+            src={arrow}
+            alt="suivante"
+            className="arrow_right"
+            onClick={changeSlide}
+          />
+        </>
       )}
     </div>
   );

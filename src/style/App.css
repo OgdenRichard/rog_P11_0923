@@ -122,6 +122,30 @@ footer {
   color: #ff6060;
 }
 
+/*---------------------------- SLIDER COMPONENT ----------------------------*/
+
+.slider {
+  position: relative;
+  height: 415px;
+  border-radius: 25px;
+}
+
+.arrow_left {
+  position: absolute;
+  width: 96px;
+  top: 160px;
+  left: 20px;
+  transform: rotate(-90deg);
+}
+
+.arrow_right {
+  position: absolute;
+  width: 96px;
+  top: 160px;
+  right: 20px;
+  transform: rotate(90deg);
+}
+
 /*--------------------------- COLLAPSE COMPONENT ---------------------------*/
 
 .collapse {

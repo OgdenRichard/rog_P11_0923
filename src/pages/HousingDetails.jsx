@@ -1,7 +1,8 @@
-import { Navigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import housings from '../data/logements.json';
 import { Slider } from '../components/Slider';
 import { Tag } from '../components/Atoms/Tag';
+import { ErrorPage } from './ErrorPage';
 
 export const HousingDetails = () => {
   const { id } = useParams();
@@ -23,7 +24,7 @@ export const HousingDetails = () => {
             </div>
           </>
         ) : (
-          <Navigate to={'notfound'} />
+          <ErrorPage />
         )}
       </main>
     </>

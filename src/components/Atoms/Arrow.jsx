@@ -1,4 +1,4 @@
-import arrow from '../../assets/images/arrow.svg';
+import arrow from '../../assets/images/arrow_nav.svg';
 
 export const Arrow = ({
   direction,

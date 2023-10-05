@@ -138,12 +138,11 @@ footer {
 }
 
 .arrow_left {
-  transform: rotate(-90deg);
+  transform: rotate(-180deg);
   left: 20px;
 }
 
 .arrow_right {
-  transform: rotate(90deg);
   right: 20px;
 }
 
@@ -282,6 +281,24 @@ footer {
     border-radius: 10px;
   }
 
+  .slider {
+    height: 255px;
+  }
+
+  .arrow_left,
+  .arrow_right {
+    width: 64px;
+    top: 95px;
+  }
+
+  .arrow_left {
+    left: 10px;
+  }
+
+  .arrow_right {
+    right: 10px;
+  }
+
   nav a {
     margin-left: 25px;
   }
@@ -322,6 +339,20 @@ footer {
   .collapse {
     font-size: 13px;
   }
+
+  .arrow_left,
+  .arrow_right {
+    width: 48px;
+    top: 103px;
+  }
+
+  .arrow_left {
+    left: 10px;
+  }
+
+  .arrow_right {
+    right: 10px;
+  }
 }
 
 @media only screen and (width < 375px) {
@@ -339,6 +370,24 @@ footer {
 
   .main_logo {
     height: 30px;
+  }
+
+  .slider {
+    height: 200px;
+  }
+
+  .arrow_left,
+  .arrow_right {
+    height: 36px;
+    top: 82px;
+  }
+
+  .arrow_left {
+    left: 1px;
+  }
+
+  .arrow_right {
+    right: 1px;
   }
 }
 

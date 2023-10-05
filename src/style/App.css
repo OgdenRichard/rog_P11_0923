@@ -195,21 +195,17 @@ footer {
 
 .dropdown-content {
   width: 90%;
-  display: none;
+  display: block;
+  margin: 10px;
+  padding-left: 5px;
+  border-radius: 0 0 5px 5px;
   background-color: #f6f6f6;
   color: #ff6060;
+  list-style-type: none;
 }
 
 .dropdown-content li {
   margin-top: 5px;
-}
-
-.show {
-  display: block;
-  list-style-type: none;
-  margin: 10px;
-  padding-left: 5px;
-  border-radius: 0 0 5px 5px;
 }
 
 /*--------------------------- MEDIA QUERIES---------------------------*/

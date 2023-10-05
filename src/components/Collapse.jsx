@@ -19,7 +19,7 @@ export const Collapse = ({ title, options }) => {
           ></img>
         </button>
         {isOpen && (
-          <ul className="dropdown-content show">
+          <ul className="dropdown-content">
             {options.map((option, index) => (
               <li key={index}>{option}</li>
             ))}

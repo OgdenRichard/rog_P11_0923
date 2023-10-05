@@ -88,6 +88,25 @@ footer {
 
 /*---------------------- SINGLE HOUSING PAGE -----------------------*/
 
+.details_wrapper {
+  font-size: 18px;
+  color: #ff6060;
+}
+
+.tags_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.tag {
+  padding: 0.5em 1em;
+  margin-right: 1em;
+  border-radius: 0.8em;
+  font-size: 0.77em;
+  background: #ff6060;
+  color: white;
+}
+
 /*--------------------------- ABOUT PAGE ---------------------------*/
 
 .about_wrapper {

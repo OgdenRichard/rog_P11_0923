@@ -31,6 +31,9 @@ export const Slider = ({ slides }) => {
           />
         </>
       )}
+      <p>
+        {currentSlide + 1}/{slides.length}
+      </p>
     </div>
   );
 };

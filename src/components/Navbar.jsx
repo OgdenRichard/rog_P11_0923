@@ -9,7 +9,7 @@ export const Navbar = () => {
   };
   return (
     <nav>
-      <NavLink style={navLinkStyle} to={'/housings'}>
+      <NavLink style={navLinkStyle} to={'/housings'} end>
         Accueil
       </NavLink>
       <NavLink style={navLinkStyle} to={'/about'}>

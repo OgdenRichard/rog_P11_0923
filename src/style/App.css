@@ -89,6 +89,8 @@ footer {
 /*---------------------- SINGLE HOUSING PAGE -----------------------*/
 
 .details_wrapper {
+  display: flex;
+  justify-content: space-between;
   font-size: 18px;
   color: #ff6060;
 }
@@ -107,18 +109,36 @@ footer {
   color: white;
 }
 
-.rating_star {
-  margin: 10px;
+.details_secondary{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .host_details {
   display: flex;
+  justify-content: space-between;
+}
+
+.host_names{
+  padding-top: 1.6em;
+  text-align: right;
+}
+
+.host_details p {
+  line-height: 0.8em;
+  text-align: right;
 }
 
 .host_portrait {
   width: 100px;
   height: 100px;
+  margin-right: 0;
   border-radius: 50%;
+}
+
+.rating_star {
+  margin: 10px;
 }
 
 /*--------------------------- ABOUT PAGE ---------------------------*/

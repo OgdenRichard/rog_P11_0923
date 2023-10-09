@@ -7,7 +7,7 @@ export const Host = ({ host }) => {
   const landlord_portrait = host.picture ? host.picture : avatar_img;
   return (
     <div className="host_details">
-      <div>
+      <div className="host_names">
         {landlord_names.map((el, index) => (
           <p key={index}>{el}</p>
         ))}

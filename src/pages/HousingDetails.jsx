@@ -3,6 +3,7 @@ import housings from '../data/logements.json';
 import { Slider } from '../components/Slider';
 import { Tag } from '../components/atoms/Tag';
 import { ErrorPage } from './ErrorPage';
+import { Rating } from '../components/atoms/Rating';
 
 export const HousingDetails = () => {
   const { id } = useParams();
@@ -14,12 +15,17 @@ export const HousingDetails = () => {
           <>
             <Slider slides={details.pictures} />
             <div className="details_wrapper">
-              <h1>{details.title}</h1>
-              <p>{details.location}</p>
-              <div className="tags_container">
-                {details.tags.map((tag, index) => (
-                  <Tag key={index} tag={tag} />
-                ))}
+              <div className="details_primary">
+                <h1>{details.title}</h1>
+                <p>{details.location}</p>
+                <div className="tags_container">
+                  {details.tags.map((tag, index) => (
+                    <Tag key={index} tag={tag} />
+                  ))}
+                </div>
+              </div>
+              <div className="details_secondary">
+                <Rating rating={details.rating} />
               </div>
             </div>
           </>

@@ -5,7 +5,7 @@ export const Rating = ({ rating }) => {
   const nb_inactive = 5 - rating;
   const active_array = Array.from({ length: rating }, () => true);
   const inactive_array = Array.from({ length: nb_inactive }, () => false);
-  const rating_array = active_array.concat(inactive_array);
+  const rating_array = [...active_array, ...inactive_array];
   return (
     <>
       <div className="details_rating">
@@ -13,7 +13,8 @@ export const Rating = ({ rating }) => {
           <img
             key={index}
             src={is_active ? star_active : star_grey}
-            alt={is_active ? 'ok' : 'nope'}
+            alt={is_active ? 'étoile active' : 'étoile désactivée'}
+            className="rating_star"
           />
         ))}
       </div>

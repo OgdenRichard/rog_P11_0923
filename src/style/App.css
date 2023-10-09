@@ -111,11 +111,11 @@ footer {
   margin: 10px;
 }
 
-.portrait_container {
+.host_details {
   display: flex;
 }
 
-.portrait {
+.host_portrait {
   width: 100px;
   height: 100px;
   border-radius: 50%;

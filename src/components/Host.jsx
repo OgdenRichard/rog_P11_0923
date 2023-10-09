@@ -1,19 +1,19 @@
-import avatar_img from '../../assets/images/default_avatar.png';
+import avatar_img from '../assets/images/default_avatar.png';
 
-export const Portrait = ({ host }) => {
+export const Host = ({ host }) => {
   const landlord_names = host.name
     ? host.name.split(' ')
-    : ['Propriétaire', 'anonyme'];
+    : ['Propriétaire', 'Anonyme'];
   const landlord_portrait = host.picture ? host.picture : avatar_img;
-  console.log(host.name.split(' '));
   return (
-    <div className="portrait_container">
+    <div className="host_details">
       <div>
-        <p>{landlord_names[0]}</p>
-        <p>{landlord_names[1]}</p>
+        {landlord_names.map((el, index) => (
+          <p key={index}>{el}</p>
+        ))}
       </div>
       <figure
-        className="portrait"
+        className="host_portrait"
         style={{
           backgroundImage: `url(${landlord_portrait})`,
           backgroundSize: 'cover',

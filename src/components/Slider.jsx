@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Arrow } from './Atoms/Arrow';
+import { Arrow } from './atoms/Arrow';
 
 export const Slider = ({ slides }) => {
   const [currentSlide, setCurrent] = useState(0);

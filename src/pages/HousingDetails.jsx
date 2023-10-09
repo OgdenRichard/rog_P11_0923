@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import housings from '../data/logements.json';
 import { Slider } from '../components/Slider';
-import { Tag } from '../components/Atoms/Tag';
+import { Tag } from '../components/atoms/Tag';
 import { ErrorPage } from './ErrorPage';
 
 export const HousingDetails = () => {

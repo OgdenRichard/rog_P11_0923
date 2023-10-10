@@ -14,14 +14,12 @@ export const About = () => {
   return (
     <>
       <main>
-        <div className="about_page">
-          <Banner title={''} image={about} />
-          <div className="about_wrapper">
-            <Collapse title={'Fiabilité'} options={options1} />
-            <Collapse title={'Respect'} options={options2} />
-            <Collapse title={'Service'} options={options3} />
-            <Collapse title={'Sécurité'} options={options4} />
-          </div>
+        <Banner title={''} image={about} />
+        <div className="about_wrapper">
+          <Collapse title={'Fiabilité'} options={options1} />
+          <Collapse title={'Respect'} options={options2} />
+          <Collapse title={'Service'} options={options3} />
+          <Collapse title={'Sécurité'} options={options4} />
         </div>
       </main>
     </>

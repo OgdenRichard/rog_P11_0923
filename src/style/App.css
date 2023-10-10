@@ -95,6 +95,11 @@ footer {
 
 /*---------------------- SINGLE HOUSING PAGE -----------------------*/
 
+.details_page {
+  height: auto;
+  margin-bottom: 150px;
+}
+
 .details_wrapper {
   display: flex;
   justify-content: space-between;
@@ -155,6 +160,7 @@ footer {
 
 .details_dropdowns {
   display: flex;
+  height: auto;
   justify-content: space-between;
 }
 
@@ -404,6 +410,10 @@ footer {
   .rating_star {
     margin: 5px;
     height: 1.1em;
+  }
+
+  .details_page {
+    margin-bottom: 75px;
   }
 }
 

@@ -15,25 +15,27 @@ export const HousingDetails = () => {
       <main>
         {details ? (
           <>
-            <Slider slides={details.pictures} />
-            <div className="details_wrapper">
-              <div className="details_primary">
-                <h1>{details.title}</h1>
-                <p>{details.location}</p>
-                <div className="tags_container">
-                  {details.tags.map((tag, index) => (
-                    <Tag key={index} tag={tag} />
-                  ))}
+            <div className="details_page">
+              <Slider slides={details.pictures} />
+              <div className="details_wrapper">
+                <div className="details_primary">
+                  <h1>{details.title}</h1>
+                  <p>{details.location}</p>
+                  <div className="tags_container">
+                    {details.tags.map((tag, index) => (
+                      <Tag key={index} tag={tag} />
+                    ))}
+                  </div>
+                </div>
+                <div className="details_secondary">
+                  <Host host={details.host} />
+                  <Rating rating={details.rating} />
                 </div>
               </div>
-              <div className="details_secondary">
-                <Host host={details.host} />
-                <Rating rating={details.rating} />
+              <div className="details_dropdowns">
+                <Collapse title={'Description'} options={details.description} />
+                <Collapse title={'Équipements'} options={details.equipments} />
               </div>
-            </div>
-            <div className="details_dropdowns">
-              <Collapse title={'Description'} options={details.description} />
-              <Collapse title={'Équipements'} options={details.equipments} />
             </div>
           </>
         ) : (

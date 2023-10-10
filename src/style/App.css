@@ -45,15 +45,17 @@ footer {
 .banner {
   position: relative;
   height: 223px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   border-radius: 25px;
   text-align: center;
 }
 
 .banner h1 {
-  line-height: 223px;
   font-size: 48px;
   color: white;
-  padding: 10px;
+  padding: 1em;
 }
 
 /*--------------------------- HOME PAGE ---------------------------*/
@@ -298,13 +300,6 @@ footer {
   }
 }
 
-@media only screen and (width < 940px) {
-  .banner h1 {
-    padding: 62px 15px;
-    line-height: 50px;
-  }
-}
-
 @media only screen and (width >= 768px) {
   header,
   footer {
@@ -334,8 +329,6 @@ footer {
 
   .banner h1 {
     font-size: 24px;
-    line-height: 30px;
-    padding: 40px 80px 40px 20px;
   }
 
   .main_logo {
@@ -408,10 +401,6 @@ footer {
 }
 
 @media only screen and (width <= 580px) {
-  .banner h1 {
-    padding-top: 25px;
-  }
-
   .host_portrait {
     margin-left: 1em;
   }
@@ -436,8 +425,8 @@ footer {
     padding: 15px 0;
   }
 
-  .banner h1 {
-    padding: 25px 50px 40px 20px;
+  nav a{
+    margin-left: 15px;
   }
 
   .main_logo {
@@ -485,10 +474,6 @@ footer {
     margin-left: 12px;
   }
 
-  .banner h1 {
-    padding: 25px 20px 10px 20px;
-  }
-
   .main_logo {
     height: 30px;
   }
@@ -517,8 +502,8 @@ footer {
   }
 }
 
-@media only screen and (width <= 330px) {
-  .banner h1 {
-    padding-top: 10px;
+@media only screen and (width <= 335px) {
+  nav {
+    padding: 8px 2px;
   }
 }

@@ -172,7 +172,6 @@ footer {
 
 .error_page {
   text-align: center;
-  height: 600px;
   color: #ff6060;
 }
 
@@ -311,9 +310,6 @@ footer {
   main {
     padding-top: 100px;
   }
-  .error_page {
-    height: 500px;
-  }
 
   .housing_wrapper {
     grid-template-columns: repeat(1, minmax(200px, 1fr));
@@ -425,7 +421,7 @@ footer {
     padding: 15px 0;
   }
 
-  nav a{
+  nav a {
     margin-left: 15px;
   }
 

@@ -5,6 +5,7 @@ import { Tag } from '../components/atoms/Tag';
 import { ErrorPage } from './ErrorPage';
 import { Rating } from '../components/atoms/Rating';
 import { Host } from '../components/Host';
+import { Collapse } from '../components/Collapse';
 
 export const HousingDetails = () => {
   const { id } = useParams();
@@ -29,6 +30,10 @@ export const HousingDetails = () => {
                 <Host host={details.host} />
                 <Rating rating={details.rating} />
               </div>
+            </div>
+            <div className="details_dropdowns">
+              <Collapse title={'Description'} options={details.description} />
+              <Collapse title={'Équipements'} options={details.equipments} />
             </div>
           </>
         ) : (

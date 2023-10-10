@@ -7,6 +7,15 @@ export const Collapse = ({ title, options }) => {
     setIsOpen(!isOpen);
     e.currentTarget.classList.toggle('expanded');
   };
+  const validOptions = (options) => {
+    if (Array.isArray(options)) {
+      return options;
+    } else if (options.length) {
+      return [options];
+    } else {
+      return ['Aucun élément disponible'];
+    }
+  };
   return (
     <>
       <div className="collapse">
@@ -20,7 +29,7 @@ export const Collapse = ({ title, options }) => {
         </button>
         {isOpen && (
           <ul className="dropdown-content">
-            {options.map((option, index) => (
+            {validOptions(options).map((option, index) => (
               <li key={index}>{option}</li>
             ))}
           </ul>

@@ -5,16 +5,20 @@
 }
 
 header {
+  position: fixed;
+  width: 100%;
+  padding: 20px 12%;
   display: flex;
   justify-content: space-between;
+  background-color: white;
+  z-index: 3;
 }
 
-header,
 main {
   width: 80%;
   max-width: 1440px;
   margin: auto;
-  padding: 20px 0;
+  padding: 150px 0;
 }
 
 nav {
@@ -28,6 +32,8 @@ nav a {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
   width: 100%;
   height: 209px;
   padding: 50px 0;
@@ -57,11 +63,10 @@ footer {
   grid-template-columns: repeat(3, minmax(200px, 1fr));
   grid-gap: 20px;
   margin-top: 50px;
+  margin-bottom: 210px;
   width: 100%;
-  height: 830px;
+  height: auto;
   padding: 20px;
-  overflow-y: auto;
-  overflow-x: unset;
   justify-content: center;
   background-color: #f6f6f6;
   border-radius: 25px;
@@ -310,15 +315,19 @@ footer {
 }
 
 @media only screen and (width < 768px) {
+  main {
+    padding-top: 100px;
+  }
   .error_page {
     height: 500px;
   }
 
   .housing_wrapper {
     grid-template-columns: repeat(1, minmax(200px, 1fr));
+    margin-top: 25px;
+    margin-bottom: 100px;
     background-color: transparent;
     border-radius: 5px;
-    height: 500px;
   }
 
   .banner {

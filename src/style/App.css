@@ -172,6 +172,7 @@ footer {
 
 .about_wrapper {
   margin-top: 50px;
+  margin-bottom: 150px;
 }
 
 /*--------------------------- ERROR PAGE ---------------------------*/
@@ -412,7 +413,8 @@ footer {
     height: 1.1em;
   }
 
-  .details_page {
+  .details_page,
+  .about_wrapper {
     margin-bottom: 75px;
   }
 }

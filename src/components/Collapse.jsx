@@ -18,7 +18,14 @@ export const Collapse = ({ title, options }) => {
   };
   return (
     <>
-      <div className="collapse">
+      <div
+        className="collapse"
+        style={
+          isOpen
+            ? { backgroundColor: '#f6f6f6' }
+            : { backgroundColor: 'transparent' }
+        }
+      >
         <button className="collapse__button" onClick={toggleDropdown}>
           {title}
           <img

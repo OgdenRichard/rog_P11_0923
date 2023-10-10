@@ -143,6 +143,15 @@ footer {
   height: 1.2em;
 }
 
+.details_dropdowns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details_dropdowns .collapse {
+  width: 47%;
+}
+
 /*--------------------------- ABOUT PAGE ---------------------------*/
 
 .about_wrapper {
@@ -374,6 +383,14 @@ footer {
 
   .rating_star {
     margin: 5px;
+  }
+
+  .details_dropdowns {
+    flex-direction: column;
+  }
+
+  .details_dropdowns .collapse {
+    width: 100%;
   }
 
   nav a {

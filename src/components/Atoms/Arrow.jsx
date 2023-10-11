@@ -1,4 +1,5 @@
 import arrow from '../../assets/images/arrow_nav.svg';
+import PropTypes from 'prop-types';
 
 export const Arrow = ({
   direction,
@@ -26,4 +27,11 @@ export const Arrow = ({
       onClick={changeSlide}
     />
   );
+};
+
+Arrow.propTypes = {
+  direction: PropTypes.string.isRequired,
+  currentSlide: PropTypes.number.isRequired,
+  setCurrent: PropTypes.func.isRequired,
+  slidesLength: PropTypes.number.isRequired,
 };

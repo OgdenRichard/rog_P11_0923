@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const Banner = ({ title, image }) => {
   return (
     <div
@@ -16,4 +18,9 @@ export const Banner = ({ title, image }) => {
       {title && <h1>{title}</h1>}
     </div>
   );
+};
+
+Banner.propTypes = {
+  title: PropTypes.string,
+  image: PropTypes.string.isRequired,
 };

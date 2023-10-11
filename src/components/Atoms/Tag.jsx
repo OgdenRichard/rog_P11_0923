@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 export const Tag = ({ tag }) => {
-  return <div className="tag">{tag}</div>;
+  return <>{tag && <div className="tag">{tag}</div>}</>;
 };
 
 Tag.propTypes = {

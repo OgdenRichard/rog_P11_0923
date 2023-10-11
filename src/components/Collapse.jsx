@@ -49,9 +49,5 @@ export const Collapse = ({ title, options }) => {
 
 Collapse.propTypes = {
   title: PropTypes.string,
-  options: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-};
-
-Collapse.defaultProps = {
-  options: [],
+  options: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,
 };

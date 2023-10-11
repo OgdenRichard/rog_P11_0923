@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 export const HousingCard = ({ id, title, cover }) => {
@@ -22,4 +23,10 @@ export const HousingCard = ({ id, title, cover }) => {
       </Link>
     </>
   );
+};
+
+HousingCard.propTypes = {
+  id: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  cover: PropTypes.string,
 };

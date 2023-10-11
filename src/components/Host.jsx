@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import avatar_img from '../assets/images/default_avatar.png';
 
 export const Host = ({ host }) => {
@@ -24,4 +25,8 @@ export const Host = ({ host }) => {
       ></figure>
     </div>
   );
+};
+
+Host.propTypes = {
+  host: PropTypes.array.isRequired,
 };

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import arrow from '../assets/images/arrow.svg';
 import { useState } from 'react';
 
@@ -44,4 +45,9 @@ export const Collapse = ({ title, options }) => {
       </div>
     </>
   );
+};
+
+Collapse.propTypes = {
+  title: PropTypes.string,
+  options: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
 };

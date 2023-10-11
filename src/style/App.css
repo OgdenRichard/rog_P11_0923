@@ -180,6 +180,7 @@ footer {
 .error_page {
   text-align: center;
   color: #ff6060;
+  margin-bottom: 150px;
 }
 
 .error_page h1 {
@@ -336,6 +337,10 @@ footer {
 
   .main_logo {
     height: 47px;
+  }
+
+  .error_page {
+    margin-top: 100px;
   }
 
   .error_page h1 {

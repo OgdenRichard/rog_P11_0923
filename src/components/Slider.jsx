@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { Arrow } from './atoms/Arrow';
+import default_house from '../assets/images/default_house.jpg';
 
 export const Slider = ({ slides }) => {
   const [currentSlide, setCurrent] = useState(0);
@@ -41,4 +42,8 @@ export const Slider = ({ slides }) => {
 
 Slider.propTypes = {
   slides: PropTypes.array,
+};
+
+Slider.defaultProps = {
+  slides: [default_house],
 };

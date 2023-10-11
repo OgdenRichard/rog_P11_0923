@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import star_active from '../../assets/images/star_active.svg';
 import star_grey from '../../assets/images/star_grey.svg';
 
@@ -20,4 +21,8 @@ export const Rating = ({ rating }) => {
       </div>
     </>
   );
+};
+
+Rating.propTypes = {
+  rating: PropTypes.number,
 };

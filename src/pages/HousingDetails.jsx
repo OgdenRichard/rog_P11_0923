@@ -29,7 +29,7 @@ export const HousingDetails = () => {
                 </div>
                 <div className="details_secondary">
                   <Host host={details.host} />
-                  <Rating rating={details.rating} />
+                  <Rating rating={parseInt(details.rating)} />
                 </div>
               </div>
               <div className="details_dropdowns">

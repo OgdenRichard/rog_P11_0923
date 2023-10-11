@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { Arrow } from './atoms/Arrow';
 
@@ -36,4 +37,8 @@ export const Slider = ({ slides }) => {
       </p>
     </div>
   );
+};
+
+Slider.propTypes = {
+  slides: PropTypes.array,
 };

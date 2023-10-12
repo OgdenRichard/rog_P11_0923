@@ -11,6 +11,7 @@ import { ErrorPage } from './pages/ErrorPage';
 import { Root } from './layouts/Root';
 import './style/App.css';
 import { HousingDetails } from './pages/HousingDetails';
+import { useEffect } from 'react';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +26,9 @@ const router = createBrowserRouter(
 );
 
 function App() {
+  useEffect(() => {
+    document.title = 'Kasa';
+  }, []);
   return <RouterProvider router={router} />;
 }
 

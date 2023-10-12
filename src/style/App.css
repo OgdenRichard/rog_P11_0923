@@ -330,6 +330,7 @@ footer {
   }
 
   .banner {
+    margin-top: 25px;
     text-align: left;
   }
 
@@ -411,6 +412,10 @@ footer {
 }
 
 @media only screen and (width <= 580px) {
+  nav a {
+    margin-left: 20px;
+  }
+
   .host_portrait {
     margin-left: 1em;
   }
@@ -422,7 +427,7 @@ footer {
 
   .details_page,
   .about_wrapper {
-    margin-bottom: 75px;
+    margin-bottom: 125px;
   }
 }
 

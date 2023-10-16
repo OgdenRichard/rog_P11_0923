@@ -15,7 +15,7 @@ export const Arrow = ({
     } else if (forward && last) {
       setCurrent(0);
     } else {
-      setCurrent(() => (forward ? currentSlide + 1 : currentSlide - 1));
+      setCurrent((prevSlide) => (forward ? prevSlide + 1 : prevSlide - 1));
     }
   };
   const altText = direction === 'arrow_right' ? 'suivante' : 'précédente';

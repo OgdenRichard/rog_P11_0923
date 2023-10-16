@@ -22,8 +22,8 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="*" element={<ErrorPage />} />
     </Route>,
-    { basename: process.env.PUBLIC_URL },
   ),
+  { basename: process.env.PUBLIC_URL },
 );
 
 function App() {
